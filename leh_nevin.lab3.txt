@@ -1,0 +1,69 @@
+Nevin Leh
+note: I wrote this code using racket with #lang scheme as the language selected.
+
+Question 1: Run this function as (f ’(3 1 4 1 5 9)). What output do you get?
+	(4 2 5 2 6 9)
+
+Question 2: What does this function f do?
+	It adds one to each number in the list.
+
+Question 3: Give a comment that explains the line following (a).
+	It checks if the list is null.
+
+Question 4: Give a comment that explains the line following (b).
+	This line returns an empty list
+
+Question 5: Give a comment that explains the line following (c).
+	This line uses cons to combine the first element plus one and uses a recursive call that takes the list without the first element 
+	as an argument as the second list to be combined.
+
+Question 6: Trace the call given in Question 1, showing each recursive call to the
+function. Specifically show each call, expanding the term lst to specific lists or atoms
+at each depth of the recursion
+
+	1. Return (4 f(1 4 1 5 9))
+	2.Return (2 f(4 1 5 9))
+	3.Return (5 f(1 5 9))
+	4.Return (2 f(5 9))
+	5. Return (6 f(9))
+	6.Return (9 f())
+	7. Return ()
+
+Question 7: What output do you get for the call (member? ’one ’(1 2 3 4))
+	#f
+
+Question 8: Does your member? function use head or tail recursion?
+	Tail recursion
+
+Question 9: What output do you get for the call (set? ’(it was the best of times, it was the worst of times))
+	#f
+
+Question 10: Research tail recursion. Describe, in a few short sentences, why it
+can be beneficial to write tail recursing functions.
+	It can be beneficial because it makes the calculation you want before your recursive call. This means that you don't need to save
+	your current stack frame because you don't need to wait for your recursive call.
+
+Question 11: What output do you get for the call: (union ’(green eggs and) ’(ham))
+	(ham green eggs and)
+
+Question 12: What output do you get for the call: (intersect ’(stewed tomatoes and macaroni) ’(macaroni and cheese))	
+	(macaroni and)
+
+Question 13: Name something you like about Scheme. Explain.
+	I like how it makes you think recursively about problems and I like how easy it is to deal with lists.
+
+Question 14: Name something you dislike about Scheme. Explain.
+	I find it very difficult to read the language. This may be due to inexperience but it was very hard to tell what a program does by just looking at it. Also the online resources are a little lacking compared to java or c.
+
+Question 15: Did you enjoy this lab? Which aspects did you like and/or dislike?
+	Overall I enjoyed this lab quite a bit. It is always fun leaning a new language and I liked how it made
+	you think differently about a problem. It was suprising how hard it was to find a solution to some
+	simple problems.
+
+Question 16: Approximately how many hours did you spend on this lab?
+	5
+
+Question 17: Do you think you will use Scheme again? For which type(s) of project(s)?
+	Honestly I probably won't use scheme again as it is very different from what I am used to and would only use it if it was
+	the only thing that would work for the application. I have heard it can be used for scripting so that might be a possible
+	application.

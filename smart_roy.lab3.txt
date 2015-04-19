@@ -1,0 +1,78 @@
+Roy Smart
+4/18/15
+Lab 3: Scheming Sets
+CSCI 305 Concepts of Programming Languages
+Montana State University
+
+Question 1: Run this function as (f ’(3 1 4 1 5 9)). What output do you get?
+	(4 2 5 2 6 9)
+
+Question 2: What does this function f do?
+	The function adds one to each element of the list.
+
+Question 3: Give a comment that explains the line following (a).
+	The line following (a) checks if the current element of the list is null.
+
+Question 4: Give a comment that explains the line following (b).
+	The line following (b) creates an empty list.
+
+Question 5: Give a comment that explains the line following (c).
+	The line following (c) adds one to the first element of the current list
+	and then makes a recursive call to function f with the remainder of the 
+	list.
+
+Question 6: Trace the call given in Question 1, showing each recursive call to the
+function. Specifically show each call, expanding the term lst to specific lists or atoms
+at each depth of the recursion.	
+	1. Return (4 f(1 4 1 5 9))
+	2.Return (2 f(4 1 5 9))
+	3.Return (5 f(1 5 9))
+	4.Return (2 f(5 9))
+	5. Return (6 f(9))
+	6.Return (9 f())
+	7. Return ()
+
+Question 7: What output do you get for the call (member? ’one ’(1 2 3 4))
+	#f
+
+Question 8: Does your member? function use head or tail recursion?
+	My member? function uses tail recursion because the expressions are 
+	calculated before the recursive call.
+
+Question 9: What output do you get for the call
+(set? ’(it was the best of times, it was the worst of times))
+	#f
+
+Question 10: Research tail recursion. Describe, in a few short sentences, why it
+can be beneficial to write tail recursing functions.
+	In tail recursion, the expressions are evaluated before the recursive call.
+	This can be beneficial because the function may find that it doesn't need
+	to evaluate every recursive call to generate an answer, thus saving the 
+	time required to retrieve the new stack pointer, etc.
+
+Question 11: What output do you get for the call:
+(union ’(green eggs and) ’(ham))
+	(ham green eggs and)
+
+Question 12: What output do you get for the call:
+(intersect ’(stewed tomatoes and macaroni) ’(macaroni and cheese))
+	(macaroni and)
+
+Question 13: Name something you like about Scheme. Explain.
+	I like how it is able to represent mathematical ideas with ease, and even 
+	though I haven't used this feature, I like its mulithreading abilities.
+
+Question 14: Name something you dislike about Scheme. Explain.
+	Due to years of learning C-style languages, I have the hardest time
+	understanding the syntax.
+
+Question 15: Did you enjoy this lab? Which aspects did you like and/or dislike?
+	I definetly enjoyed learning about functional programming, I have been 
+	really wanting to learn it for a while now.
+
+Question 16: Approximately how many hours did you spend on this lab?
+	I spent approximately four hours putting this lab together.
+
+Question 17: Do you think you will use Scheme again? For which type(s) of project(s)?
+	I would consider using scheme if I had to write a mathematical program for which
+	the problem is very complicated.
